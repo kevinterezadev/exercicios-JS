@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Exercício 25</title>
+</head>
+<body>
+    <section class="transaction">
+        <form class="transaction__form" id="form">
+            <legend class="transaction__legend" id="transaction-legend">Nova Transação</legend>
+            <fieldset class="transaction__fieldset">
+                <div class="transaction__group">
+                    <label for="transaction-name" class="transaction__label">Nome:</label>
+                    <input type="text" name="transaction_name" id="form-name" class="transaction__input">
+                </div>
+                <div class="transaction__group">
+                    <label for="transaction-value" class="transaction__label">Valor:</label>
+                    <input type="number" step="0.01" name="transaction_value" id="form-value" class="transaction__input">
+                </div>
+                <button type="submit" class="transaction__btn" id="save-btn">Salvar</button>
+                <p class="transaction__or">Ou</p>
+                <button class="transaction__btn transaction__btn--edit" id="edit-btn">Atualizar</button>
+            </fieldset>
+        </form>
+    </section>
+    <section class="dashboard">
+        <h1 class="dashboard__balance">Saldo: <span id="balance"></span></h1>
+        <h2 class="dashboard__title">Histórico de Transações</h2>
+        <section class="history" id="history-section">
+        
+        </section>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>

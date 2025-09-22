@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #1A1A1A;
+    padding: 2rem;
+    gap: 2rem;
+    color: #F8F4F6;
+}
+
+.transaction {
+    flex: 1;
+    background-color: #242424;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.transaction__legend {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.transaction__legend--edit {
+    color: #2196f3;
+}
+
+.transaction__fieldset {
+    border: none;
+}
+
+.transaction__group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.transaction__label {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.transaction__input {
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.transaction__btn {
+    font-size: 1em;
+    padding: 0.75rem 0;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    background-color: #4caf50;
+    color: #F8F4F6;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.transaction__btn:hover {
+    background-color: #45a049;
+}
+
+.transaction__or {
+    text-align: center;
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+.transaction__btn--edit {
+    background-color: #2196f3;
+}
+
+.transaction__btn--edit:hover {
+    background-color: #1976d2;
+}
+
+.dashboard {
+    flex: 2;
+    background-color: #242424;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.dashboard__balance {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #F8F4F6;
+}
+
+.dashboard__balance--negative {
+    color: #f44336;
+}
+
+.dashboard__balance--positive {
+    color: #4caf50;
+}
+
+.dashboard__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.history {
+    flex: 1;
+    overflow-y: auto;
+    border-top: 1px solid #ccc;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.history__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    background-color: #1A1A1A;
+}
+
+.history__info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.history__name {
+    font-weight: 500;
+}
+
+.history__amount {
+    font-weight: bold;
+}
+
+.history__amount--positive {
+    color: #4caf50;
+}
+
+.history__amount--negative {
+    color: #f44336;
+}
+
+.history__option {
+    margin-left: 1rem;
+    padding: 0.25rem 0.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.history__option--edit {
+    background-color: #2196f3;
+    color: #F8F4F6;
+}
+
+.history__option--edit:hover {
+    background-color: #1976d2;
+}
+
+.history__option--delete {
+    background-color: #f44336;
+    color: #F8F4F6;
+}
+
+.history__option--delete:hover {
+    background-color: #d32f2f;
+}
